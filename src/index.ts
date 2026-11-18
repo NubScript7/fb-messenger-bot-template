@@ -1,9 +1,9 @@
 import { Hono } from "hono";
+import { webhook } from "./routes/messenger";
 
 const app = new Hono<{ Bindings: CloudflareBindings }>();
 
-app.get("/message", (c) => {
-  return c.text("Hello Hono!");
-});
+app.route("/", webhook)
 
 export default app;
+
