@@ -17,7 +17,8 @@ export const COMMANDS: CommandStructure = {
             `(note: add a \"${state.command.prefix}\" prefix when calling a command)\n`,
             "v - get app version",
             "help - used to print this help message",
-            "pickanumber - returns an integer from given range or pass \"any\" to use the range of 1 to 1M."
+            "pickanumber - returns an integer from given range or pass \"any\" to use the range of 1 to 1M.",
+            "echo - sends back the words that is given"
         )]
     },
 
